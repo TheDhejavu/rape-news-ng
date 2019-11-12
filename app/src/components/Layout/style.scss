@@ -1,0 +1,30 @@
+@import "../../assets/styles/common.scss";
+
+.app-layout{
+    background:#fff;
+    min-height:700px;
+  }
+
+  .app-layout__main{
+    padding-left:300px;
+    margin:0 auto;
+    min-height: 400px;
+    @include MQ($breakpoint-md){
+      padding:0;
+    }
+  }
+
+  .app-content{
+    margin:0 auto;
+    max-width:1150px;
+    padding:10px 15px;
+    min-height: 400px;
+    .app-content__top{
+      padding:10px 5px;
+    }
+    .heading{
+      font-size:1.3rem;
+      font-weight:600;
+      padding:10px 0;
+    }
+  }

@@ -1,0 +1,35 @@
+@import "../../../assets/styles/common.scss";
+
+.card{
+    background: #ffffff;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin:10px;
+    padding:10px;
+    position: relative;
+    box-sizing: border-box;
+    min-height:10px;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    &:hover{
+        background: rgb(250, 246, 246);
+    }
+    .text{
+        font-size:0.9rem;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+        padding:15px 0;
+    }
+    .date{
+        font-size:0.8rem;
+        opacity:0.8;
+        letter-spacing: 0.02rem;
+    }
+    .source{
+        margin:10px 0;
+        padding:4px 15px;
+        border-radius:5px;
+        display: inline-block;
+        font-size:0.8rem;
+        border:1px solid #ccc;
+    }
+}

@@ -1,0 +1,66 @@
+@import "../../../assets/styles/common.scss";
+
+.app-layout__sidebar{
+    background:#fff;
+    position:relative;
+    background-color: #f6f7f8;
+    border-right: 1px solid #efefef;
+    width:300px;
+    border-left:40px solid #efefef;
+    height:100vh;
+    position: fixed;
+    z-index: 1;
+    @include MQ($breakpoint-md){
+      display:none;
+    }
+    .app-layout-sidebar__panel{
+      padding:10px 0;
+      position:relative;
+      height:100vh;
+    }
+    .logo-container{
+      padding:10px;
+      font-size:1.4rem;
+      color:#2bb24c;
+    }
+   
+    .app-layout-sidebar__nav{
+      padding:10px 0;
+
+      .nav-lists__bottom{
+        position:relative;
+        bottom:0;
+      }
+      li{
+        display:block;
+        a{
+          display:block;
+          color:#000;
+          font-weight:600;
+          padding:15px 16px;
+          font-size:1rem;
+          letter-spacing:0.01rem;
+          border-radius:0px;
+          transition: all 0.5s ease-in;
+          i{
+            font-size:1.5rem;
+            position: relative;
+            bottom:-1px;
+            padding-right:3px;
+          }
+
+          &:hover{
+            background:rgba(0,0,0,0.05);
+          }
+        }
+        a.active{
+          color:#2bb24c;
+          background:#2bb24c;
+          color:#fff;
+          &:hover{
+            background:#2bb24c;
+          }
+        }
+      }
+    }
+  }
